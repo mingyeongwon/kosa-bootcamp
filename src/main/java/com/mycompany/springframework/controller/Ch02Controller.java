@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.mycompany.springframework.dto.FileInfo;
+import com.mycompany.springframework.interceptor.Auth;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -179,4 +180,18 @@ public class Ch02Controller {
     	  return fileInfo;
       }    
       
+      @GetMapping("/testAuthInterceptor1")
+      public String testAuthInterceptor1(String chNum, Model model) {
+    	  log.info("testAuthInterceptor1() 실행");
+    	  model.addAttribute("chNum", chNum);
+    	  return "ch02/testAuthInterceptor1";
+      }
+      
+      @GetMapping("/testAuthInterceptor2")
+      @Auth
+      public String testAuthInterceptor2(String chNum, Model model) {
+    	  log.info("testAuthInterceptor2() 실행");
+    	  model.addAttribute("chNum", chNum);
+    	  return "ch02/testAuthInterceptor2";
+      }
 }
