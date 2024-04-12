@@ -45,4 +45,13 @@
     <url-pattern>/*</url-pattern>
   </filter-mapping>
   
+   <filter>
+      <filter-name>Ch02Filter</filter-name>
+      <filter-class>com.mycompany.springframework.filter.Ch02Filter</filter-class>
+   </filter>
+   <filter-mapping>
+      <filter-name>Ch02Filter</filter-name>
+      <url-pattern>/ch02/*</url-pattern>
+   </filter-mapping>
+  
 </web-app>
