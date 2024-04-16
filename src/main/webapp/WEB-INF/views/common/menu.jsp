@@ -76,4 +76,59 @@
     </div>
   </div>
   
+      <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button ${chNum == 'ch05'?'':'collapsed'}" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        Ch05. 요청 헤더 값 및 쿠키 사용
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse ${chNum == 'ch05'?'show':''}" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+         <ul>
+             <li><a href="${pageContext.request.contextPath}/ch05/header">요청 헤더 값</a></li>
+             <li><a href="${pageContext.request.contextPath}/ch05/createCookie">쿠키 생성 및 응답 http에 포함시켜서 보내기</a></li>
+             <li><a href="${pageContext.request.contextPath}/ch05/readCookie">요청 http에서 쿠키 값 얻기</a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button ${chNum == 'ch06'?'':'collapsed'}" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+        Ch06. 포워드와 리다이렉트
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse ${chNum == 'ch06'?'show':''}" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+         <ul>
+             <li><a href="${pageContext.request.contextPath}/ch06/forward">포워드와 request 범위 데이터</a></li>
+             <li><a href="${pageContext.request.contextPath}/ch06/redirect">리다이렉트와 session 범위 데이터</a></li>
+             <li><a href="${pageContext.request.contextPath}/ch06/sessionData">다른 요청 시 session 범위 데이터</a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button ${chNum == 'ch07'?'':'collapsed'}" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+        Ch07. 데이터 전달
+      </button>
+    </h2>
+    <div id="collapseSeven" class="accordion-collapse collapse ${chNum == 'ch07'?'show':''}" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+         <ul>
+             <li><a href="${pageContext.request.contextPath}/ch07/request1">ModelAndView: request 범위</a></li>
+             <li><a href="${pageContext.request.contextPath}/ch07/request2">DTO: request 범위</a></li>
+             <li><a href="${pageContext.request.contextPath}/ch07/request3">@ModelAttribute: request 범위 </a></li>
+             <li><a href="${pageContext.request.contextPath}/ch07/request4">Model: request 범위 </a></li>
+             <li><a href="${pageContext.request.contextPath}/ch07/session">HttpSession: session 범위 </a></li>
+             <li><a href="${pageContext.request.contextPath}/ch07/application">ServletContext: application 범위 </a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  
+  
 </div>
