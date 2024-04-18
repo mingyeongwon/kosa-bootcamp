@@ -38,9 +38,25 @@
 				<div class="col-md-8">
 					<!-- ############################################ -->
 					<div class="card">
-						<div class="card-header">session 데이터</div>
+						<div class="card-header">로그인 양식</div>
 						<div class="card-body">
+							<c:if test="${login=='success'}">
+								<a href="sessionLogout" class="btn btn-danger btn-sm">로그아웃</a>
+							</c:if>
 							
+							<c:if test="${login!='success'}">
+								<form class="m-2" method="post" action="sessionLogin">
+									<div class="form-group mb-2">
+										<label for="mid">아이디</label> 
+										<input type="text" class="form-control" id="mid" name="mid" value="${ch04LoginForm.mid}">
+									</div>
+									<div class="form-group mb-2">
+										<label for="mpassword">패스워드</label> 
+										<input type="password" class="form-control" id="mpassword" name="mpassword" value="${ch04LoginForm.mpassword}">
+									</div>
+									<button type="submit" class="btn btn-info btn-sm">로그인</button>
+								</form>
+							</c:if>
 						</div>
 					</div>
 					<!-- ########################################## -->

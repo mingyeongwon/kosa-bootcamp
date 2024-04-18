@@ -121,10 +121,40 @@
          <ul>
              <li><a href="${pageContext.request.contextPath}/ch07/request1">ModelAndView: request 범위</a></li>
              <li><a href="${pageContext.request.contextPath}/ch07/request2">DTO: request 범위</a></li>
-             <li><a href="${pageContext.request.contextPath}/ch07/request3">@ModelAttribute: request 범위 </a></li>
-             <li><a href="${pageContext.request.contextPath}/ch07/request4">Model: request 범위 </a></li>
-             <li><a href="${pageContext.request.contextPath}/ch07/session">HttpSession: session 범위 </a></li>
+             <li><a href="${pageContext.request.contextPath}/ch07/sessionLoginForm">HttpSession: session 범위 </a></li>
              <li><a href="${pageContext.request.contextPath}/ch07/application">ServletContext: application 범위 </a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  
+      <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button ${chNum == 'ch08'?'':'collapsed'}" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+        Ch08. 세션 지원
+      </button>
+    </h2>
+    <div id="collapseEight" class="accordion-collapse collapse ${chNum == 'ch08'?'show':''}" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+         <ul>
+             <li><a href="${pageContext.request.contextPath}/ch08/productList">상품 목록</a></li>
+             <li><a href="${pageContext.request.contextPath}/ch08/cartView"> 장바구니 보기</a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button ${chNum == 'ch09'?'':'collapsed'}" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+        Ch09. 파일 업로드와 다운로드
+      </button>
+    </h2>
+    <div id="collapseNine" class="accordion-collapse collapse ${chNum == 'ch09'?'show':''}" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+         <ul>
+             <li><a href="${pageContext.request.contextPath}/ch09/fileUploadForm">파일 업로드</a></li>
+             <li><a href="${pageContext.request.contextPath}/ch09/downloadFileList">파일 다운로드</a></li>
           </ul>
       </div>
     </div>

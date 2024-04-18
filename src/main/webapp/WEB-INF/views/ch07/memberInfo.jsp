@@ -38,9 +38,13 @@
 				<div class="col-md-8">
 					<!-- ############################################ -->
 					<div class="card">
-						<div class="card-header">applicationData</div>
+						<div class="card-header">회원 정보</div>
 						<div class="card-body">
-							<p>방문자 수 : ${counter}</p>
+							<p>mid: ${ch07JoinForm.mid}</p>
+							<p>mname: ${ch07JoinForm.mname}</p>
+							<p>mpassword: ${ch07JoinForm.mpassword}</p>
+							<p>mjob: ${ch07JoinForm.mjob}</p>
+							<p>mcity: ${ch07JoinForm.mcity}</p>
 						</div>
 					</div>
 					<!-- ########################################## -->
