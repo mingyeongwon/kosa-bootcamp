@@ -25,6 +25,13 @@
       <param-name>contextConfigLocation</param-name>
       <param-value>classpath:spring/dispatcher/*.xml</param-value>
     </init-param>
+    
+    <!-- 404일 경우 NoHandlerFoundExeption을 발생시키도록 함 -->
+    <init-param>
+      <param-name>throwExceptionIfNoHandlerFound</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    
     <load-on-startup>1</load-on-startup>
     
     <!-- multipart/form-data를 해석하기 위한 설정 -->

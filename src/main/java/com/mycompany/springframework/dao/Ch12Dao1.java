@@ -2,7 +2,7 @@ package com.mycompany.springframework.dao;
 
 import org.springframework.stereotype.Repository;
 
-@Repository
-public class MemberDao {
+
+public class Ch12Dao1 {
 
 }

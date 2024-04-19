@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="ch12Service5"
+		class="com.mycompany.springframework.service.Ch12Service5">
+		<!-- setter 주입 -->
+		<property name="ch12Dao1" ref="ch12Dao1" />
+		<property name="ch12Dao2" ref="ch12Dao2"/>
+	</bean>
+
+	<bean id="ch12Dao1"
+		class="com.mycompany.springframework.dao.Ch12Dao1"></bean>
+
+	<bean id="ch12Dao2"
+		class="com.mycompany.springframework.dao.Ch12Dao2"></bean>
+		
+	<bean id="ch12Service6"
+			class="com.mycompany.springframework.service.Ch12Service6">
+			<!-- Constructor 주입 -->
+			<constructor-arg ref="ch12Dao1"></constructor-arg>
+			<constructor-arg ref="ch12Dao2"></constructor-arg>
+	</bean>
+
+</beans>
+
