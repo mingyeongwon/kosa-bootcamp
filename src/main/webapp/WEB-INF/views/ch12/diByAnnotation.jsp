@@ -40,8 +40,7 @@
 					<div class="card">
 						<div class="card-header">Annotation으로 의존성 주입</div>
 						<div class="card-body">
-							<p>@Autowired: Ch12Service7.java, Ch12Service8.java, Ch12Service9.java 참조</p>
-							<p>@Resource: Ch12Service10.java, Ch12Service11.java 참조</p>
+							<p>Ch12Service7.java, Ch12Service8.java, Ch12Service9.java, Ch12Service10.java 참조</p>
 						</div>
 					</div>
 					<!-- ########################################## -->

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.mycompany.springframework.dao.mybatis.Ch13BoardDao">
+
+	<insert id="insert" parameterType="Ch13Board">
+		<selectKey keyProperty="bno" order="BEFORE" resultType="int">
+			select seq_bno.nextval from dual
+		</selectKey>
+		insert into board(bno, btitle, bcontent, bdate, mid, bhitcount) 	
+		values(#{bno}, #{btitle}, #{bcontent}, sysdate, #{mid}, 0)
+	</insert>
+	
+
+</mapper>

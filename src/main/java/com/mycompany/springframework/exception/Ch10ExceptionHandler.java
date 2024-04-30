@@ -10,7 +10,7 @@ import org.springframework.web.servlet.NoHandlerFoundException;
 
 import lombok.extern.slf4j.Slf4j;
 
-@ControllerAdvice
+//@ControllerAdvice
 @Component
 @Slf4j
 public class Ch10ExceptionHandler {

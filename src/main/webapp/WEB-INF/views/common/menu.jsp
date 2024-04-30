@@ -312,6 +312,26 @@
 			</div>
 		</div>
 	</div>
+	
+	
+			<div class="accordion-item">
+		<h2 class="accordion-header">
+			<button class="accordion-button ${chNum == 'ch13'?'':'collapsed'}"
+				type="button" data-bs-toggle="collapse"
+				data-bs-target="#collapse13" aria-expanded="false"
+				aria-controls="collapse13">Ch13. 데이터베이스 연동</button>
+		</h2>
+		<div id="collapse13"
+			class="accordion-collapse collapse ${chNum == 'ch13'?'show':''}"
+			data-bs-parent="#accordionExample">
+			<div class="accordion-body">
+				<ul>
+					<li><a href="${pageContext.request.contextPath}/ch13/writeBoardForm">게시물 쓰기 (첨부 제외)</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
 
 
 </div>
