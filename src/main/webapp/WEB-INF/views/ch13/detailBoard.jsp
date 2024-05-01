@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>   
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -31,29 +34,29 @@
 				<div class="col-md-8">
 					<!-- ############################################ -->
 					<div class="card">
-						<div class="card-header">게시물 쓰기</div>
+						<div class="card-header">게시물 보기</div>
 						<div class="card-body">
-							      <form id="writeBoardForm" method="post" action="writeBoard" enctype="multipart/form-data">
-							         <div class="input-group">
-							            <div class="input-group-prepend"><span class="input-group-text">btitle</span></div>
-							            <input id="btitle" type="text" name="btitle" class="form-control">
-							         </div>
-							         
-							         <div class="input-group mt-3">
-							            <div class="input-group-prepend"><span class="input-group-text">bcontent</span></div>
-							            <textarea id="bcontent" name="bcontent" class="form-control"></textarea>
-							         </div>
-							         
-							         <div class="input-group mt-3">
-							            <div class="input-group-prepend"><span class="input-group-text">battach</span></div>
-							            <input id="battach" type="file" name="battach" class="form-control">
-							         </div>
-							            
-							         <div class="mt-3">
-							            <button type="submit" class="btn btn-info btn-sm me-2">글쓰기</button>
-							            <a class="btn btn-info btn-sm" href="boardList">목록보기</a>
-							         </div>
-							      </form>
+							
+							<p>번호: ${board.bno}</p>
+							<p>제목: ${board.btitle }</p>
+							<p>글쓴이: ${board.mid }</p>
+							<p>날짜: <fmt:formatDate value="${board.bdate}" pattern="yyyy-MM-dd"/></p>
+							<p>조회수: ${board.bhitcount}</p>
+							
+							<c:if test="${board.battachoname != null}">
+								<div class="mb-2">
+									<p>첨부파일: <a href="attachDownload?bno=${board.bno}">${board.battachoname}</a></p>							
+									<img src="attachDownload?bno=${board.bno}" width="150"/>								
+								</div>
+							</c:if>
+							
+							<p>내용: ${board.bcontent}</p>
+							
+							<hr/>
+							
+							<a href="boardList" class="btn btn-info btn-sm">목록</a>
+							<a href="updateBoardForm?bno=${board.bno}" class="btn btn-info btn-sm">수정</a>
+							<a href="deleteBoard?bno=${board.bno}" class="btn btn-info btn-sm">삭제</a>
 						</div>
 					</div>
 					<!-- ########################################## -->
