@@ -13,10 +13,13 @@
 		<config>src/main/resources/spring/root/ch12_create_bean_by_xml.xml</config>
 		<config>src/main/resources/spring/root/ch12_properties.xml</config>
 		<config>src/main/resources/spring/root/ch13_datasource.xml</config>
+		<config>src/main/resources/spring/root/ch15_transaction.xml</config>
+		<config>src/main/resources/spring/root/ch17_security.xml</config>
 	</configs>
 	<autoconfigs>
 		<config>src/main/resources/spring/dispatcher/ch01_static_resource.xml</config>
 		<config>src/main/resources/spring/root/ch12_di_by_xml.xml</config>
+		<config>src/main/resources/spring/root/ch13_mybatis.xml</config>
 		<config>src/main/resources/spring/dispatcher/ch01_component_scan.xml</config>
 		<config>src/main/resources/spring/dispatcher/ch01_view_resolver.xml</config>
 		<config>src/main/resources/spring/root/ch01_component_scan.xml</config>

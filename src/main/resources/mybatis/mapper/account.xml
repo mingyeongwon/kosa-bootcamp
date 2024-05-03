@@ -3,4 +3,16 @@
 
 <mapper namespace="com.mycompany.springframework.dao.mybatis.Ch13AccountDao">
 
+	<update id="updateBalance" parameterType="Ch15Account">
+		update account set balance = #{balance} where ano = #{ano}
+	</update>
+	
+	<select id="selectByAno" parameterType="int" resultType="Ch15Account">
+		select ano, owner, balance from account where ano = #{ano}
+	</select>
+	
+	<select id="selectAll" resultType="Ch15Account">
+		select ano, owner, balance from account
+	</select>
+	
 </mapper>
