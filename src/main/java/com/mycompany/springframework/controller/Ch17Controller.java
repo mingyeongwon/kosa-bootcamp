@@ -36,7 +36,7 @@ public class Ch17Controller {
 		return "ch17/admin/page";
 	}
 
-	@Secured("ROLE_MANAGER")
+	@Secured({"ROLE_MANAGER"}) // 여러 개면 중괄호 붙이고 , 사용해서 작성하기
 	@GetMapping("/manager/page")
 	public String managerPage() {
 		return "ch17/manager/page";
