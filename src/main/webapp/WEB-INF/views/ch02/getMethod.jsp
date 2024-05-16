@@ -19,7 +19,7 @@
       <script>
          function handleBtn1() {
             console.log("handleBtn() 실행");
-            location.href = "getMethod?chNum=ch02&bkind=qAndA&bno=200"; //이게 먼소리?
+            location.href = "getMethod?chNum=ch02&bkind=qAndA&bno=200"; 
          }
          
          function handleBtn2() {
