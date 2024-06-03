@@ -5,10 +5,10 @@
         <UIComponentA id="uiComponentA" class="bg-info" style="color: orange;"
         @click="handleClick"/>
 
-        <UIComponentB d="uiComponentB" class="bg-info" style="color: orange;"
+        <UIComponentB id="uiComponentB" class="bg-info" style="color: orange;"
         @click="handleClick"/>
         
-        <UIComponentB d="uiComponentB" myclass="bg-warning" mystyle="color: red;"
+        <UIComponentB id="uiComponentB" myclass="bg-warning" mystyle="color: red;"
         @click="handleClick"/>
     </div>
 </div>

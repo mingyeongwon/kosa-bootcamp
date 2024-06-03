@@ -167,7 +167,7 @@
           aria-expanded="true"
           aria-controls="collapse4"
         >
-        Ch04EventHandlingWatch
+        Ch04EventHandling & Watch 
         </button>
       </h2>
       <div
@@ -179,12 +179,150 @@
           <ul class="nav nav-underline flex-column">
             <li class="nav-item">
               <RouterLink to="/Ch04EventHandlingWatch/Exam01EventHandling" class="nav-link"
-                >Exam01EventHandling : 표현식 </RouterLink>
+                >Exam01EventHandling : 이벤트 처리 </RouterLink>
+            </li>
+            <li class="nav-item">
+              <RouterLink to="/Ch04EventHandlingWatch/Exam02Watch" class="nav-link"
+                >Exam02Watch : 상태 변경 감시 </RouterLink>
             </li>
           </ul>
         </div>
       </div>
     </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button
+          class="accordion-button fw-bold"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapse5"
+          aria-expanded="true"
+          aria-controls="collapse5"
+        >
+        Ch05DataDelivery
+        </button>
+      </h2>
+      <div
+        id="collapse5"
+        class="accordion-collapse show"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <ul class="nav nav-underline flex-column">
+            <li class="nav-item">
+              <RouterLink to="/Ch05DataDelivery/Exam01Props" class="nav-link"
+                >Exam01Props : 부모에서 자식으로 (prop 방식) </RouterLink>
+            </li>
+            <li class="nav-item">
+              <RouterLink to="/Ch05DataDelivery/Exam02EventEmit" class="nav-link"
+                >Exam02EventEmit : 자식에서 부모로 (emit 방식) </RouterLink>
+            </li>
+            <li class="nav-item">
+              <RouterLink to="/Ch05DataDelivery/Exam03ProvideInject" class="nav-link"
+                >Exam03ProvideInject : 하위 컴포넌트 전체에 데이터 제공 </RouterLink>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button
+          class="accordion-button fw-bold"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapse6"
+          aria-expanded="true"
+          aria-controls="collapse6"
+        >
+        Ch06LifecycleHook
+        </button>
+      </h2>
+      <div
+        id="collapse6"
+        class="accordion-collapse show"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <ul class="nav nav-underline flex-column">
+            <li class="nav-item">
+              <RouterLink to="/Ch06LifecycleHook/Exam01LifecycleHook" class="nav-link"
+                >Exam01LifecycleHook</RouterLink>
+            </li>
+            <li class="nav-item">
+              <RouterLink to="/Ch06LifecycleHook/Exam02DomElementRef" class="nav-link"
+                >Exam02DomElementRef</RouterLink>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button
+          class="accordion-button fw-bold"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapse7"
+          aria-expanded="true"
+          aria-controls="collapse7"
+        >
+        Ch07VuexStateManagement
+        </button>
+      </h2>
+      <div
+        id="collapse7"
+        class="accordion-collapse show"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <ul class="nav nav-underline flex-column">
+            <li class="nav-item">
+              <RouterLink to="/Ch07VuexStateManagement/Exam01RootState" class="nav-link"
+                >Exam01RootState 루트 상태 읽기 및 변경 </RouterLink>
+            </li>
+            <li class="nav-item">
+              <RouterLink to="/Ch07VuexStateManagement/Exam02CounterState" class="nav-link"
+                >Exam02CounterState </RouterLink>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button
+          class="accordion-button fw-bold"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapse8"
+          aria-expanded="true"
+          aria-controls="collapse8"
+        >
+        Ch08RestAPI
+        </button>
+      </h2>
+      <div
+        id="collapse8"
+        class="accordion-collapse show"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <ul class="nav nav-underline flex-column">
+            <li class="nav-item">
+              <RouterLink to="/Ch08RestAPI/Exam01Promise" class="nav-link"
+                >Exam01Promise</RouterLink>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>    
 
 
  
