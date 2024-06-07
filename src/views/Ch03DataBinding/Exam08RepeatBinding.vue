@@ -27,10 +27,7 @@
           </thead>
           <tbody>
             <tr v-for="(item) in boards" :key="item.bno">
-              <td>{{ item.bno }}</td>
-              <td>{{ item.btitle }}</td>
-              <td>{{ item.bwriter }}</td>
-              <td>{{ item.bdate }}</td>
+q
             </tr>
           </tbody>
         </table>

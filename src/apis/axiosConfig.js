@@ -8,6 +8,7 @@ axios.defaults.baseURL = "http://localhost";
 function addAuthHeader(accessToken) {
     // common 객체에 동적 속성으로 Authorization 추가
     axios.defaults.headers.common["Authorization"] = "Bearer " + accessToken;
+    console.log(axios.defaults.headers.common);
 }
 
 // 공통 요청 헤더에서 Authorization 헤더 삭제
@@ -15,25 +16,10 @@ function addAuthHeader(accessToken) {
 function removeAuthHeader() {
     // common 객체의 Authorization 속성 삭제
     delete axios.defaults.headers.common["Authorization"];
-}
-
-// 로컬 스토리지에 accessToken 저장 
-function saveAccessToken(accessToken) {
-    localStorage.setItem("accessToken", accessToken);
-}
-
-// 로컬 스토리지에 있는 AccessToken을 읽기
-function readAccessToken() {
-    const accessToken = localStorage.getItem("accessToken") || "";
-    // if(accessToken != "") {
-    //     addAuthHeader(accessToken);
-    // }
-    return accessToken;
+    console.log(axios.defaults.headers.common);
 }
 
 export default {
     addAuthHeader,
     removeAuthHeader,
-    saveAccessToken,
-    readAccessToken
 }
