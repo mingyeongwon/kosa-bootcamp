@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="ch12Service5"
+		class="com.mycompany.springframework.service.Ch12Service5">
+		<!-- setter 주입 -->
+		<property name="ch12Dao1" ref="ch12Dao1" />
+		<property name="ch12Dao2" ref="ch12Dao2"/>
+	</bean>
+
+	<bean id="ch12Dao1"
+		class="com.mycompany.springframework.dao.Ch12Dao1"></bean>
+
+	<bean id="ch12Dao2"
+		class="com.mycompany.springframework.dao.Ch12Dao2"></bean>
+		
+	<bean id="ch12Service6"
+			class="com.mycompany.springframework.service.Ch12Service6">
+			<!-- Constructor 주입 -->
+			<constructor-arg ref="ch12Dao1"></constructor-arg>
+			<constructor-arg ref="ch12Dao2"></constructor-arg>
+	</bean>
+	
+	<bean id="ch12Service7"
+			class="com.mycompany.springframework.service.Ch12Service7">
+			<property name="list">
+				<list>
+					<value>아이템1</value>
+					<value>아이템2</value>
+					<value>아이템3</value>
+				</list>
+			</property>
+			
+			<property name="set">
+				<set>
+					<value>아이템1</value>
+					<value>아이템2</value>
+					<ref bean="ch12Dao1"/> <!-- ref : 이미 생성되어 있는 객체 넣기 -->
+					<ref bean="ch12Dao2"/>
+				</set>
+			</property>	
+			
+			<property name="map">
+				<map>
+					<entry key="key1" value="value1"/>
+					<entry key="key2" value="value2"/>
+				</map>
+			</property>	
+			
+			<property name="prop">
+				<props>
+					<prop key="key1">value1</prop>
+					<prop key="key2">value2</prop>
+					<prop key="key3">value3</prop>
+				</props>
+			</property>	
+	</bean>
+
+</beans>
+

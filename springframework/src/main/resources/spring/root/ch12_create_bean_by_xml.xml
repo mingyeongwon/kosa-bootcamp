@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <!-- 기본생성자를 이용해서 관리 빈으로 생성 -->
+   <bean id="ch12Service1"
+      class="com.mycompany.springframework.service.Ch12Service1">
+   </bean>
+   <!-- 정적 메소드를 이용해서 관리 빈으로 생성 -->
+   <bean name="ch12Service2"
+      class="com.mycompany.springframework.service.Ch12Service2"
+      factory-method="getInstance"></bean>
+
+   <!-- 인스턴스 메소드를 이용해서 관리 빈으로 생성 -->
+   <bean name="ch12Service1_2"
+   		factory-bean="ch12Service1"
+   		factory-method="getObject"></bean>
+</beans>
+
