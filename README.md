@@ -4,18 +4,13 @@
 - 주관 : KOSA
 
 ## 📝 학습 기록
-|주제|학습 내용 정리|기록
-|--------|--------|-------
-|Java|00_개발 환경 설정|[link]()
-||01_변수, 연산자, 조건문, 반복문|[link]()
-||02_OOP (클래스, 상속, 캡슐화, 다형성)|[link]()
-||03_인터페이스|[link]()
-||04_예외 처리|[link]()
-||05_컬렉션 (List, Set, Map)|[link]()
-||06_스트림, 람다|[link]()
-||07_멀티스레드, 동기화|[link]()
-||08_입출력 (I/O) 처리|[link]()
-
+|주제|기록
+|--------|-------
+|Java|[link](https://github.com/mingyeongwon/kosa-bootcamp/tree/main/study-record/java)
+|htmlcssjs|[link](https://github.com/mingyeongwon/kosa-bootcamp/tree/main/study-record/htmlcssjs)
+|vue|[link](https://github.com/mingyeongwon/kosa-bootcamp/tree/main/study-record/vue)
+|springframework|[link](https://github.com/mingyeongwon/kosa-bootcamp/tree/main/study-record/springframework)
+|springboot|[link](https://github.com/mingyeongwon/kosa-bootcamp/tree/main/study-record/springboot)
 
 ## 🧑‍🧑‍🧒‍🧒 팀 프로젝트
 ### 첫 번째 프로젝트 : 안경 쇼핑몰 
